@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Adds a git changelog to a rails application"
   s.description = "Allows you to view the local git changelog at the /changelog/ path"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.2"
