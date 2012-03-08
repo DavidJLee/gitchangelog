@@ -1,0 +1,14 @@
+<h1>Changelog</h1>
+
+<% if @giterror %>
+	<p>Could not find git repository or no commits to repository</p>
+<% else %>
+	<p><%= pluralize @logsize, "update" %></p>
+
+	<% @log.each do |l| %>
+	<div class="commit">
+	<span class="cdate"><%= l.committer.date.strftime("%b %d %Y %H:%M") %></span> <span class="cname"><%= l.committer.name %></span> <span class="chash"><%= l.objectish %></span><br>
+	<pre><%= l.message %></pre>
+	</div>
+	<% end %>
+<% end %>
