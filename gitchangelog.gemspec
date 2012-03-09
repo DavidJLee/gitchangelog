@@ -16,8 +16,9 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.2.2"
-	s.add_dependency "git"
+	# build on rails 3.2.2 engine... but should be compatible backwards a ways.
+  s.add_dependency "rails", ">= 3.1.0"
+	s.add_dependency "git", ">= 1.2.5"
   # s.add_dependency "jquery-rails"
 
   s.add_development_dependency "sqlite3"

@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    gitchangelog (0.0.1)
-      git
-      rails (~> 3.2.2)
+    gitchangelog (0.1.1)
+      git (>= 1.2.5)
+      rails (>= 3.1.0)
 
 GEM
   remote: http://rubygems.org/

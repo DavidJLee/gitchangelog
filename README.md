@@ -20,3 +20,10 @@ You can omit the stylesheet above, and create your own styles.
 
 Each commit is wrapped in a div with class "commit". This div contains spans with the following class styles: "cdate", "cname", and "chash".
 The commit message is enclosed in a pre tag.
+
+## Custom Layout
+You can set the application layout specifically for Gitchangelog in your application.rb file.
+
+  config.to_prepare do
+		GitchangelogController.layout "mylayout"
+	end
