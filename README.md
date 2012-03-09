@@ -24,6 +24,6 @@ The commit message is enclosed in a pre tag.
 ## Custom Layout
 You can set the application layout specifically for Gitchangelog in your application.rb file.
 
-  config.to_prepare do
+	config.to_prepare do
 		GitchangelogController.layout "mylayout"
 	end
