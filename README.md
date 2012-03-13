@@ -12,6 +12,10 @@ in with the other require statements.
 	*= require gitchangelog
 
 
+You can link to your changelog from a view with:
+
+	<%= link_to "Changelog", changelog_path %>
+
 That's all there is to it.
 
 
